@@ -50,6 +50,10 @@ jobs:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
             file: "verademo.war"
+        - name: Group of log lines
+          run: |
+            echo "***********************"
+            ls -lsrth
 
   veracode-fix:
     runs-on: ubuntu-latest
