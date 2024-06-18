@@ -49,10 +49,7 @@ jobs:
           with:
             vid: ${{ secrets.VID }}
             vkey: ${{ secrets.VKEY }}
-            file: "verademo.war" 
-            request_policy: "VeraDemo Policy"
-            debug: 1
-            fail_build: false
+            file: "verademo.war"
 
   veracode-fix:
     runs-on: ubuntu-latest
