@@ -54,6 +54,10 @@ jobs:
           run: |
             echo "***********************"
             ls -lsrth
+        - uses: actions/upload-artifact@v4
+          with:
+            name: Upload filtered_results json file
+            path: filtered_results.json
 
   veracode-fix:
     runs-on: ubuntu-latest
